@@ -20,10 +20,10 @@ public class TCPReader extends Thread {
 	@Override
 	public void run() {
 		try (
-				ServerSocket serverSocket = new ServerSocket(this.port);
-				Socket clientSocket = serverSocket.accept();
-				BufferedReader in = new BufferedReader(
-						new InputStreamReader(clientSocket.getInputStream()))
+			ServerSocket serverSocket = new ServerSocket(this.port);
+			Socket clientSocket = serverSocket.accept();
+			BufferedReader in = new BufferedReader(
+					new InputStreamReader(clientSocket.getInputStream()))
 		) {
 			System.out.println("TCP Connection established.");
 			String line;
