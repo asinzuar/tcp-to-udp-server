@@ -20,4 +20,4 @@
 ```mvn package```
 
 **Usage**:
-```java -jar <jarname<Multicast Group address<Multicast port>```
+```java -jar <jarname> <Multicast Group address> <Multicast port>```
